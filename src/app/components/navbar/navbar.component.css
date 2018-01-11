@@ -1,0 +1,28 @@
+.navbar {
+    border-radius: 0px;
+}
+.navbar:first-child{
+	margin-bottom: 0;
+	background-color: #34374c;
+	border: 0px;
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover{
+	background-color: #606274;
+}
+.navbar-form .input-group{
+	width: 400px;
+}
+.searchBTN{
+	background-color: #34374c;
+	color: #fff;
+}
+.navbar-brand{
+	font-size: 23px;
+}
