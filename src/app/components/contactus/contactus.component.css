@@ -1,0 +1,14 @@
+.social a{
+	color: #34374c;
+}
+.questions{
+	padding: 20px 0 50px;
+}
+.panel{
+	background-color: #34374c;
+	color: #fff;
+}
+.form-horizontal .form-group{
+	margin-left: 0px;
+	margin-right: 0px;
+}

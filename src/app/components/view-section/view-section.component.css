@@ -1,0 +1,13 @@
+.view{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid #ee2b47;
+	background-color: #fff;
+}
+.carousel-inner{
+	/*height: 400px;*/
+}
+.imgFull{
+	height: 100%;
+}

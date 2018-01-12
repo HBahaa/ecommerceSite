@@ -1,11 +1,14 @@
-
-	.footer1{
-		background-color: #fff;
-		margin-top: 20px;
-		color: #9d9d9d;
-		border-top: 2px solid #ccc;
-	}
-	.rights{
-		background-color: #ccc;
-		padding: 5px 0;
-	}
+.footer1{
+	background-color: #fff;
+	/*margin-top: 20px;*/
+	color: #9d9d9d;
+	border-top: 2px solid #ccc;
+	padding: 20px 0;
+}
+.rights{
+	background-color: #eee;
+	padding: 5px 0;
+}
+.social a{
+	color: #34374c;
+}

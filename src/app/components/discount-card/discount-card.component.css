@@ -17,20 +17,38 @@
     bottom: 0;*/
     width: 100%;
 }
-.card .card-image .card-title {
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 100%;
-    padding: 24px;
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    transition: .3s ease-out;
 }
-.card .card-title {
-    font-size: 24px;
-    font-weight: 300;
+.btn-floating {
+	position: absolute;
+    right: -1px;
+    bottom: 0px;
+    display: inline-block;
+    color: #fff;
+    z-index: 1;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ee2b47;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
 }
 .card .card-content {
-    padding: 24px;
+    padding: 4px 24px 4px;
     border-radius: 0 0 2px 2px;
 }
 .card .card-footer .btn{
@@ -49,7 +67,9 @@
 }
 .card .card-footer span.strike-price{
     text-decoration: line-through;
-    display: none;
+    /*display: none;*/
+    display: block;
+    color: #aaa;
 }
 .card .card-content .rating .stars
 {

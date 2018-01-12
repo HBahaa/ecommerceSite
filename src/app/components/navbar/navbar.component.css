@@ -1,8 +1,9 @@
 .navbar {
     border-radius: 0px;
+    margin-bottom: 0;
 }
 .navbar:first-child{
-	margin-bottom: 0;
+	
 	background-color: #34374c;
 	border: 0px;
 }
