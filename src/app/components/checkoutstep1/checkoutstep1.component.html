@@ -1,0 +1,86 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-push-3 col-xs-8 col-xs-push-2">
+			<div class="content">
+				<img src="assets/checkout-page-1.png" class="img-responsive" alt="">
+				<div class="step1">
+					<h3>{{ 'CHECKSTEP1.title' | translate }}</h3>
+
+					<form>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="firstName">{{ 'CHECKSTEP1.firstName' | translate }}</label>
+								<input type="text" id="firstName" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="lastName">{{ 'CHECKSTEP1.lastName' | translate }}</label>
+								<input type="text" id="lastName" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label">{{ 'CHECKSTEP1.country' | translate }}</label>
+								<select class="form-control">
+									<option disabled="" selected=""></option>
+						        	<option value="Afghanistan"> Afghanistan </option>
+						        	<option value="Albania"> Albania </option>
+						        	<option value="Algeria"> Algeria </option>
+						        	<option value="American Samoa"> American Samoa </option>
+						        	<option value="Andorra"> Andorra </option>
+						        	<option value="Angola"> Angola </option>
+						        	<option value="Anguilla"> Anguilla </option>
+						    	</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="address">{{ 'CHECKSTEP1.address' | translate }}</label>
+								<input type="text" id="address" class="form-control">
+								<p class="note">{{ 'CHECKSTEP1.addressMsg' | translate }}</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+						    	<label class="control-label">{{ 'CHECKSTEP1.governorate' | translate }}</label>
+								<select class="form-control">
+									<option disabled="" selected=""></option>
+						        	<option value="Afghanistan"> Afghanistan </option>
+						        	<option value="Albania"> Albania </option>
+						    	</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+						    	<label class="control-label">{{ 'CHECKSTEP1.city' | translate }}</label>
+								<select class="form-control">
+									<option disabled="" selected=""></option>
+						        	<option value="Afghanistan"> Afghanistan </option>
+						        	<option value="Albania"> Albania </option>
+						        	<option value="Algeria"> Algeria </option>
+						        	<option value="American Samoa"> American Samoa </option>
+						    	</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="email">{{ 'CHECKSTEP1.email' | translate }}</label>
+								<input type="text" id="email" class="form-control">
+								<p class="note">{{ 'CHECKSTEP1.emailMsg' | translate }}</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="phone">{{ 'CHECKSTEP1.phone' | translate }}</label>
+								<input type="text" id="phone" class="form-control">
+								<p class="note">{{ 'CHECKSTEP1.phoneMsg' | translate }}</p>
+							</div>
+						</div>
+						<a routerLink="/checkoutstep2"><button class="btn btn-success btn-block">{{ 'CHECKSTEP1.btn' | translate }}</button></a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

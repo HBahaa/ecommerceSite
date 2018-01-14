@@ -1,0 +1,49 @@
+.content{
+    margin: 50px 0;
+}
+
+img{
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+}
+.step3{
+	background-color: #fff;
+	color: #333;
+	padding: 10px 30px 30px;
+	margin: 50px 0;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+.step3 .header{
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.step3 h3{
+	display: inline-block;
+}
+.step3 a.edit{
+	display: inline-block;
+	float: left;
+	line-height: 70px;
+}
+.step3 .numbers{
+	border-bottom: 2px dashed #aaa;
+	margin-bottom: 10px;
+}
+.step3 .numbers label,
+.step3 .total label{
+	display: inline-block;
+	line-height: 40px;
+}
+.step3 .numbers h4,
+.step3 .total h4{
+	display: inline-block;
+	float: left;
+}
+.step3 .total{
+	border-bottom: 2px dashed #000;
+	margin-bottom: 20px;
+}

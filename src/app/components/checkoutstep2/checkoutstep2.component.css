@@ -1,0 +1,50 @@
+.content{
+    margin: 50px 0;
+}
+.step2{
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    margin: 50px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.step2 h3{
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.step2 form{
+    padding-top: 20px;
+}
+.step2 label{
+    font-weight: 600;
+}
+.step2 .note{
+    font-size: 11px;
+    color: #333;
+}
+img{
+    margin: 0 auto;
+}
+h4{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h4:after {
+    display: inline-block;
+    content: " ";
+    width: 40%;
+    border: 1px solid #aaa;
+}
+h4:before {
+    display: inline-block;
+    content: " ";
+    width: 40%;
+    border: 1px solid #aaa;
+}
+a{
+    text-decoration: none;
+}
