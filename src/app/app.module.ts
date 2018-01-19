@@ -16,15 +16,14 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { CardComponent } from './components/card/card.component';
+import { ItemComponent } from './components/item/item.component';
 import { ProductComponent } from './components/product/product.component';
-import { CartComponent } from './components/cart/cart.component';
 import { ProductsSliderComponent } from './components/products-slider/products-slider.component';
 import { AboutComponent } from './components/about/about.component';
 import { CategoryComponent } from './components/category/category.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { StarsComponent } from './components/stars/stars.component';
-import { DiscountCardComponent } from './components/discount-card/discount-card.component';
+import { DiscountItemComponent } from './components/discount-item/discount-item.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { ViewSectionComponent } from './components/view-section/view-section.component';
 import { ImageSectionComponent } from './components/image-section/image-section.component';
@@ -33,6 +32,18 @@ import { Checkoutstep1Component } from './components/checkoutstep1/checkoutstep1
 import { Checkoutstep2Component } from './components/checkoutstep2/checkoutstep2.component';
 import { Checkoutstep3Component } from './components/checkoutstep3/checkoutstep3.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
+import { OwnedItemComponent } from './components/owned-item/owned-item.component';
+import { ByerOwnedItemsComponent } from './components/byer-owned-items/byer-owned-items.component';
+import { ByerSuggestedComponent } from './components/byer-suggested/byer-suggested.component';
+import { ByerWishlistComponent } from './components/byer-wishlist/byer-wishlist.component';
+import { SearchComponent } from './components/search/search.component';
+import { ByerNavbarComponent } from './components/byer-navbar/byer-navbar.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { ByerProfileComponent } from './components/byer-profile/byer-profile.component';
+import { SellerProfileComponent } from './components/seller-profile/seller-profile.component';
+import { ByerOnDeliveryComponent } from './components/byer-on-delivery/byer-on-delivery.component';
+import { SellerNavbarComponent } from './components/seller-navbar/seller-navbar.component';
+import { SellerShowProductComponent } from './components/seller-show-product/seller-show-product.component';
 
 export function translateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -46,15 +57,14 @@ export function translateLoaderFactory(http: HttpClient) {
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    CardComponent,
+    ItemComponent,
     ProductComponent,
-    CartComponent,
     ProductsSliderComponent,
     AboutComponent,
     CategoryComponent,
     FilterComponent,
     StarsComponent,
-    DiscountCardComponent,
+    DiscountItemComponent,
     ContactusComponent,
     ViewSectionComponent,
     ImageSectionComponent,
@@ -62,7 +72,19 @@ export function translateLoaderFactory(http: HttpClient) {
     Checkoutstep1Component,
     Checkoutstep2Component,
     Checkoutstep3Component,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    OwnedItemComponent,
+    ByerOwnedItemsComponent,
+    ByerSuggestedComponent,
+    ByerWishlistComponent,
+    SearchComponent,
+    ByerNavbarComponent,
+    SliderComponent,
+    ByerProfileComponent,
+    SellerProfileComponent,
+    ByerOnDeliveryComponent,
+    SellerNavbarComponent,
+    SellerShowProductComponent
   ],
   imports: [
     HttpClientModule,
@@ -71,15 +93,22 @@ export function translateLoaderFactory(http: HttpClient) {
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
       {path: 'register', component: RegisterComponent},
-      {path: 'cart', component: CartComponent},
       {path: 'about', component: AboutComponent},
       {path: 'contact', component: ContactusComponent},
       {path: 'category', component: CategoryComponent},
+      {path: 'product', component: ProductComponent},
       {path: 'confirmEmail', component: ConfirmEmailComponent},
       {path: 'forgetPassword', component: ForgetPasswordComponent},
       {path: 'checkoutstep1', component: Checkoutstep1Component},
       {path: 'checkoutstep2', component: Checkoutstep2Component},
       {path: 'checkoutstep3', component: Checkoutstep3Component},
+      {path: 'byerowneditems', component: ByerOwnedItemsComponent},
+      {path: 'byersuggested', component: ByerSuggestedComponent},
+      {path: 'byerwishlist', component: ByerWishlistComponent},
+      {path: 'byerondelivery', component: ByerOnDeliveryComponent},
+      {path: 'byerprofile', component: ByerProfileComponent},
+      {path: 'sellerprofile', component: SellerProfileComponent},
+      {path: 'sellershowproduct', component: SellerShowProductComponent},
       {path: '', component: HomeComponent},
     ]),
     TranslateModule.forRoot({

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#submenu">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+		</div>
+		<div class="collapse navbar-collapse" id="submenu">
+			<ul class="nav navbar-nav">
+				<li routerLinkActive="active"><a routerLink="/byerowneditems">مشترياتك السابقة</a></li>
+				<li routerLinkActive="active"><a routerLink="/byerondelivery">{{ 'NAVBAR.register' | translate }}</a></li>
+				<li routerLinkActive="active"><a routerLink="/byerwishlist">{{ 'NAVBAR.team' | translate }}</a></li>
+				<li routerLinkActive="active"><a routerLink="/byersuggested">{{ 'NAVBAR.team' | translate }}</a></li>
+				<li routerLinkActive="active"><a routerLink="/byerprofile">{{ 'NAVBAR.team' | translate }}</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right flip">
+		        <!-- <li routerLinkActive="active"> -->
+		        	<a routerLink="#"><button class="btn btn-defualt start_sell">ابدا البيع الان</button></a>
+		        <!-- </li> -->
+		    </ul>
+		</div>
+	</div>
+</nav>

@@ -4,7 +4,7 @@
 .questions{
 	padding: 20px 0 50px;
 }
-.panel{
+.panel .panel-heading{
 	background-color: #34374c;
 	color: #fff;
 }

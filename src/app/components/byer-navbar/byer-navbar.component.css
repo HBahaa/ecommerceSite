@@ -1,0 +1,17 @@
+.navbar{
+	margin-bottom: 0px;
+	background-color: #fff;
+	border: 0px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover{
+	background-color: #ee2b47;
+	color: #fff;
+}
+.start_sell{
+	margin-top: 9%;
+	margin-right: 3%;
+	background-color: #34374c;
+	color: #fff;
+}

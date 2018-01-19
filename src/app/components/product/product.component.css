@@ -1,0 +1,195 @@
+.section1, .section2, .section3, .section4, .section5, .section6{
+	margin: 10px 0 0;
+	border-bottom: 2px solid #ee2b47;
+	padding: 20px 0;
+}
+.section1 .btn{
+	display: inline-block;
+	width: 49%;
+}
+.section1 .share{
+	margin-top: 10px;
+}
+.section1 .share p, .section1 .share .btn, .section1 .share a{
+	display: inline-block;
+	width: auto;
+}
+.section1 .share a{
+	color: #34374c;
+	margin: 0 5px;
+	vertical-align: middle;
+}
+.bg{
+	background-color: #fff;
+	padding: 0 0 20px 10px;
+}
+.item .thumb {
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img {
+	width: 100%;
+	margin: 2px;
+}
+.item img {
+	width: 100%;
+}
+.desc{
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0 10px 0;
+}
+
+.desc .stars{
+	display: inline-block;
+	float: left;
+}
+a.discount{
+	background-color: #f00;
+	padding: 10px;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+}
+span.strike-price{
+    text-decoration: line-through;
+}
+.desc .form-group{
+	display: inline-block;
+	float: left;
+}
+.desc .form-control{
+	width: auto;
+	display: inline-block;
+}
+.section1 .noBorder{
+	border: 0;
+}
+.section1 .carousel-control.right,
+.section1 .carousel-control.left{
+	height: 50px;
+    width: 30px;
+    top: 23%;
+    color: #fff;
+    background-color: #ee2b47;
+    background-image: none;
+    opacity: 1;
+}
+.section1 .carousel-control .glyphicon-chevron-left,
+.section1  .carousel-control .icon-prev{
+    margin-left: none;
+}
+.section1 .carousel-control .glyphicon-chevron-left{
+	margin-left: -15px;
+}
+.section1 .carousel-control .glyphicon-chevron-right,
+.section1 .carousel-control .glyphicon-chevron-left{
+    font-size: 20px;
+}
+/*************** section2***************/
+
+
+/************** section3 *****************/
+.section3 .pro{
+	background-color: #fff;
+	padding: 20px;
+}
+.section3 .pro a{
+	text-decoration: underline;
+}
+.section3 .info{
+	border-bottom: 1px solid #000;
+}
+.section3 .info p{
+	line-height: 2.5;
+}
+.moreBTN{
+	margin: 20px 0;
+}
+
+/************** section4 *****************/
+
+#exTab2{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#exTab2 h3 {
+  padding : 5px 15px;
+}
+.tab-content{
+	background: #fff;
+	min-height: 250px;
+	border: 1px solid #ddd;
+	border-top: 0px;
+	padding: 10px 0;
+}
+.nav-tabs > li > a{
+	margin-right: 0;
+}
+.nav-tabs > li{
+	background-color: #ddd;
+	border-left: 1px solid aliceblue;
+	width: 33.33%;
+	text-align: center;
+}
+
+.left_content{
+	text-align: center;
+	margin-top: 15%;
+}
+.left_content p{
+	vertical-align: middle;
+}
+.right_content{
+	padding: 30px;
+	border-left: 1px solid #000;
+}
+.right_content > p > span{
+	font-size: 24px;
+}
+.right_content > p > span#small{
+	font-size: smaller;
+}
+.vote{
+	padding: 10px 0;
+	height: 15px;
+}
+.vote p{
+	display: inline-block;
+}
+.vote .line{
+	display: inline-block;
+	min-width: 100px;
+	height: 5px;
+	border: 1px solid #aaa;
+	background-color: #fff;
+}
+.vote .line div{
+	width: 80%;
+	height: 3px;
+	background-color: #ee2b47;
+}
+
+/****************** section5 ******************/
+.section5 .comment{
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.section5 .comment .stars{
+	margin-top: 10px;
+	display: inline-block;
+}
+.section5 .comment span{
+	color: #aaa;
+}
+.section5 .moreComments{
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+/************************ section6**********************/
+.section6{
+	border: 0;
+}

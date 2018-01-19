@@ -1,267 +1,408 @@
-<div class="prodect_slider">
-    <div class="container">
+ <div class="prodect_slider">
+<!--     <div class="container">
         <div class="row">
-            <div class="row">
-                <div class="col-xs-9">
-                    <h3>Carousel Product Cart Slider</h3>
-                </div>
-                <div class="col-xs-3">
-                    <!-- Controls -->
-                    <div class="controls pull-left hidden-xs">
-                        <a class="right fa fa-chevron-right btn btn-success" href="#carousel-example" data-slide="next"></a>
-                        <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example" data-slide="prev"></a>
-                    </div>
-                </div>
-            </div>
-            <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Sample Product</h5>
-                                                <h5 class="price-text-color">
-                                                    $199.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                                <i class="price-text-color fa fa-star"></i>
-                                                <i class="price-text-color fa fa-star"></i>
-                                                <i class="price-text-color fa fa-star"></i>
-                                                <i class="price-text-color fa fa-star"></i>
+            <div class="col-md-12"> -->
+                <div id="myCarousel{{id}}" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </div>
                                         </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
                                         </div>
-                                        <div class="clearfix">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
                                         </div>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 hidden-sm">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
+                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Product Example</h5>
-                                                <h5 class="price-text-color">
-                                                    $249.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                            </div>
-                                        </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Next Sample Product</h5>
-                                                <h5 class="price-text-color">
-                                                    $149.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                         </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
                                         </div>
-                                        <div class="clearfix">
-                                        </div>
+                                      </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Sample Product</h5>
-                                                <h5 class="price-text-color">
-                                                    $199.99</h5>
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
+                                        </div>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 hidden-sm">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="http://via.placeholder.com/500x400">
+                                        <!-- <span class="card-title">Card Title</span> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="rating">
+                                            <span>(123)</span>
+                                            <div class="stars">
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                         </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                        
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+                                        </p>
+                                        <div class="card-footer">
+                                            <button class="btn btn-success add_btn">add <i class="fa fa-shopping-cart"></i></button>
+                                            <div class="hid_btn">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                        </button>
+                                                    </span>
+                                                  
+                                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <span class="strike-price">123,3222 جنيه</span>
+                                                <span>123,3222 جنيه</span>
+                                            </p>
                                         </div>
-                                        <div class="clearfix">
-                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Product with Variants</h5>
-                                                <h5 class="price-text-color">
-                                                    $199.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Grouped Product</h5>
-                                                <h5 class="price-text-color">
-                                                    $249.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                            </div>
-                                        </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Product with Variants</h5>
-                                                <h5 class="price-text-color">
-                                                    $149.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-item">
-                                    <div class="photo">
-                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="row">
-                                            <div class="price col-md-6">
-                                                <h5>
-                                                    Product with Variants</h5>
-                                                <h5 class="price-text-color">
-                                                    $199.99</h5>
-                                            </div>
-                                            <div class="rating hidden-sm col-md-6">
-                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                                </i><i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="separator clear-left">
-                                            <p class="btn-add">
-                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
-                                            <p class="btn-details">
-                                                <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
-                                        </div>
-                                        <div class="clearfix">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel{{id}}" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel{{id}}" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-            </div>
+<!--             </div>
+
         </div>
-    </div>
+    </div> -->
 </div>
