@@ -40,10 +40,15 @@ import { SearchComponent } from './components/search/search.component';
 import { ByerNavbarComponent } from './components/byer-navbar/byer-navbar.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { ByerProfileComponent } from './components/byer-profile/byer-profile.component';
-import { SellerProfileComponent } from './components/seller-profile/seller-profile.component';
+import { SellerEditProfileComponent } from './components/seller-edit-profile/seller-edit-profile.component';
 import { ByerOnDeliveryComponent } from './components/byer-on-delivery/byer-on-delivery.component';
 import { SellerNavbarComponent } from './components/seller-navbar/seller-navbar.component';
 import { SellerShowProductComponent } from './components/seller-show-product/seller-show-product.component';
+import { SellerPublicProfileComponent } from './components/seller-public-profile/seller-public-profile.component';
+import { SellerEditProductComponent } from './components/seller-edit-product/seller-edit-product.component';
+import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
+import { CartComponent } from './components/cart/cart.component';
+import { ProductAllSellersComponent } from './components/product-all-sellers/product-all-sellers.component';
 
 export function translateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -81,10 +86,15 @@ export function translateLoaderFactory(http: HttpClient) {
     ByerNavbarComponent,
     SliderComponent,
     ByerProfileComponent,
-    SellerProfileComponent,
+    SellerEditProfileComponent,
     ByerOnDeliveryComponent,
     SellerNavbarComponent,
-    SellerShowProductComponent
+    SellerShowProductComponent,
+    SellerPublicProfileComponent,
+    SellerEditProductComponent,
+    SellerAddProductComponent,
+    CartComponent,
+    ProductAllSellersComponent
   ],
   imports: [
     HttpClientModule,
@@ -97,6 +107,7 @@ export function translateLoaderFactory(http: HttpClient) {
       {path: 'contact', component: ContactusComponent},
       {path: 'category', component: CategoryComponent},
       {path: 'product', component: ProductComponent},
+      {path: 'productallsellers', component: ProductAllSellersComponent},
       {path: 'confirmEmail', component: ConfirmEmailComponent},
       {path: 'forgetPassword', component: ForgetPasswordComponent},
       {path: 'checkoutstep1', component: Checkoutstep1Component},
@@ -107,8 +118,12 @@ export function translateLoaderFactory(http: HttpClient) {
       {path: 'byerwishlist', component: ByerWishlistComponent},
       {path: 'byerondelivery', component: ByerOnDeliveryComponent},
       {path: 'byerprofile', component: ByerProfileComponent},
-      {path: 'sellerprofile', component: SellerProfileComponent},
+      {path: 'sellereditprofile', component: SellerEditProfileComponent},
+      {path: 'sellerpublicprofile', component: SellerPublicProfileComponent},
       {path: 'sellershowproduct', component: SellerShowProductComponent},
+      {path: 'selleraddproduct', component: SellerAddProductComponent},
+      {path: 'sellereditproduct', component: SellerEditProductComponent},
+      {path: 'cart', component: CartComponent},
       {path: '', component: HomeComponent},
     ]),
     TranslateModule.forRoot({

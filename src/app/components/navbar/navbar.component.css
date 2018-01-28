@@ -17,8 +17,18 @@
 .navbar-inverse .navbar-nav > .active > a:hover{
 	background-color: #606274;
 }
+.categoty{
+	padding: 10px;
+	margin-top: 5px;
+	background-color: #34374c !important;
+	color: #fff !important;
+	border-radius: 5px;
+}
+.navbar > .container .navbar-brand{
+	margin-right: 0;
+}
 .navbar-form .input-group{
-	width: 395px;
+	width: 380px;
 }
 .searchBTN{
 	background-color: #34374c;
@@ -26,4 +36,62 @@
 }
 .navbar-brand{
 	font-size: 23px;
+}
+.cart{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.cart .fa{
+	color: #34374c;
+	font-size: 2.5em;
+}
+.badge{
+	position: absolute;
+	background-color: #ee2b47;
+}
+ 
+.custom-nav .navbar-nav > li > a:focus,
+.custom-nav .navbar-nav > li > a:hover,
+.custom-nav .navbar-nav > .active > a,
+.custom-nav .navbar-nav > .active > a:focus,
+.custom-nav .navbar-nav > .active > a:hover{
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	background-color: #fff;
+}
+.custom-nav .dropdown-menu{
+	border:0px;
+	box-shadow: 0 9px 12px rgba(0,0,0,.175);
+	min-width: 500px;
+}
+.dropdown-menu ul{
+	list-style: none;
+	padding-right: 0;
+}
+
+.dropdown-menu ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.dropdown-menu ul > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.txt > p{
+	padding: 15px;
+	margin-bottom: 0;
+}
+.dropdown-menu h5{
+	padding-right: 20px;
+}
+.dropdown-menu img{
+	padding-left: 15px;
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
 }
