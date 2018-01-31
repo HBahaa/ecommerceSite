@@ -62,16 +62,28 @@
 .section3 .carousel-indicators li{
 	border: 1px solid #ee2b47;
 }
-
-
-.rgt{
-    width: 70%;
-    float: right;
+.custom-img{
+    height: 119px;
 }
-.lft{
-    width: 30%;
-    float: left;
+.custom2-img{
+    height: 137px;
 }
 .small-image{
-    width: 30% !important;
+    width: 31% !important;
+    height: 119px;
+    margin-left: -4px;
+}
+.large-image{
+    width: 38% !important;
+    height: 119px;
+    margin-left: -4px;
+}
+
+@media (max-width: 768px) {
+    .pd1{
+        padding-left: 0
+    }
+    .pd2{
+        padding-right: 0
+    }
 }
