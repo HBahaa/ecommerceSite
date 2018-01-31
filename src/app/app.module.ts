@@ -10,7 +10,6 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { HttpModule, Http } from "@angular/http";
 
 import { MyDatePickerModule } from 'mydatepicker';
-// import { TinymceModule } from 'angular2-tinymce';
 import { QuillEditorModule } from 'ngx-quill-editor';
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
