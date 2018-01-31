@@ -1,3 +1,149 @@
-<p>
-  seller-add-product works!
-</p>
+<app-seller-navbar></app-seller-navbar>
+
+<div class="container">
+	<div class="content">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="component">
+					<h4>
+						{{ 'SELLERADDPRODUCT.productDetails' | translate }}
+					</h4>
+					<div class="section">
+						<br />
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.pname' | translate }}: </label>
+							<input type="text" class="form-control" value="">
+						</div>
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.mark' | translate }}: </label>
+							<input type="text" class="form-control" value="">
+						</div>
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.pStatus' | translate }}: </label>
+							<select class="form-control">
+								<option value="masterCard" selected>ماستر كارت</option>
+					        	<option value="card"> كارت </option>
+					    	</select>
+						</div>
+					</div>
+				</div>
+				
+				<div class="component">
+					<h4>{{ 'SELLERADDPRODUCT.productPrice' | translate }}</h4>
+					<div class="section">
+						<br />
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.pPrice' | translate }}: </label>
+							<input type="text" class="form-control" value="">
+						</div>
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.IsThereDiscout' | translate }}: </label>
+							<div>
+								<label class="radio-btn">One<input type="radio" checked="checked" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								<label class="radio-btn">Two<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.discountEndDate' | translate }}: </label>
+							<my-date-picker name="mydate" [options]="myDatePickerOptions"></my-date-picker>
+						</div>
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.afterDiscount' | translate }}: </label>
+							<input type="text" class="form-control" value="">
+						</div>
+					</div>
+				</div>
+
+				<div class="component">
+					<h4>
+						{{ 'SELLERADDPRODUCT.productProp' | translate }}
+					</h4>
+					<div class="section">
+						<br />
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.address' | translate }}: </label>
+							<input type="text" class="form-control" value="">
+						</div>
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.addressDetails' | translate }}: </label>
+							<input type="text" class="form-control" value="">
+						</div>
+
+						<button class="btn btn-default btn-lg add left"><i class="fa fa-plus fa-lg"></i></button>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="component">
+					<h4>
+						{{ 'SELLERADDPRODUCT.productImage' | translate }}
+					</h4>
+					<div class="section">
+						<div class="dropzone"  (error)="onUploadError($event)" (success)="onUploadSuccess($event)">
+							<i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i><p>اضغط لرفع صورة</p>
+						</div>
+						<img src="http://via.placeholder.com/100x80" style="margin-right: 0;">
+						<img src="http://via.placeholder.com/100x80">
+						<img src="http://via.placeholder.com/100x80">
+						<img src="http://via.placeholder.com/100x80" style="margin-left: 0;">
+					</div>
+				</div>
+				<div class="component">
+					<h4>
+						{{ 'SELLERADDPRODUCT.productDesc' | translate }}
+					</h4>
+					<!-- <app-tinymce [(ngModel)]='content'></app-tinymce> -->
+					<div class="section">
+						<h5>شرح المنتج بالتفصيل</h5>
+						<quill-editor class="editor" [(ngModel)]="editorContent"
+							[options]="editorOptions"
+							(blur)="onEditorBlured($event)"
+							(focus)="onEditorFocused($event)"
+							(ready)="onEditorCreated($event)"
+							(change)="onContentChanged($event)"></quill-editor>
+					</div>
+				</div>
+				<div class="component">
+					<h4>
+						{{ 'SELLERADDPRODUCT.types' | translate }}
+					</h4>
+					<div class="section">
+						<br />
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.mainsegment' | translate }}: </label>
+							<select class="form-control">
+								<option value="masterCard" selected>القسم الرئيسي</option>
+					        	<option value="card"> كارت </option>
+					    	</select>
+						</div>
+						<div class="form-group">
+							<label class="control-label">{{ 'SELLERADDPRODUCT.subsegment' | translate }}: </label>
+							<select class="form-control">
+								<option value="masterCard" selected>القسم الفرعي</option>
+					        	<option value="card"> كارت </option>
+					    	</select>
+						</div>
+						<div class="form-group">
+							<label class="control-label">الوسوم البحثية: </label>
+							<input type="text" class="form-control" value="" />
+						</div>
+
+						<button class="btn btn-default"> تاج مختصر <i class="fa fa-close"></i></button>
+						<button class="btn btn-default"> تاج مختصر <i class="fa fa-close"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-push-4">
+				<button class="btn btn-success btn-block btn-lg">{{ 'SELLERADDPRODUCT.save' | translate }}</button>
+			</div>
+		</div>
+	</div>
+</div>

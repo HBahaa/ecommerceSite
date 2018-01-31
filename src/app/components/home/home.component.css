@@ -62,3 +62,16 @@
 .section3 .carousel-indicators li{
 	border: 1px solid #ee2b47;
 }
+
+
+.rgt{
+    width: 70%;
+    float: right;
+}
+.lft{
+    width: 30%;
+    float: left;
+}
+.small-image{
+    width: 30% !important;
+}

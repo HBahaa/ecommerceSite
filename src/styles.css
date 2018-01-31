@@ -2,10 +2,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
 @import '~font-awesome/css/font-awesome.min.css';
-
+@import '~dropzone/dist/min/dropzone.min.css';
 body{
 	background-color: #eee;
 }
-.navbar-right.flip{
+/*.navbar-right.flip{
 	margin-left: -30px;
-}
+}*/

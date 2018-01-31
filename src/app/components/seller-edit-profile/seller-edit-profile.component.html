@@ -1,19 +1,19 @@
-<app-seller-navbar></app-seller-navbar>
+<app-byer-navbar></app-byer-navbar>
 
 <div class="container">
 	<div class="section1">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>البيانات الاساسية</h3>
+				<h3>{{ 'SELLEREDITPROFILE.mainData' | translate }}</h3>
 			</div>
 		</div>
 		<div class="bg">
 			<div class="row">
 				<div class="col-md-12">
-					<button class="btn btn-default left">تعديل <i class="fa fa-edit"></i></button>
-					<h4>اسم المستخدم: <span>هبه</span></h4>
-					<h4>البريد الالكتروني: <span>هبه</span></h4>
-					<h4>كلملة المرور: <span>هبه</span></h4>
+					<button class="btn btn-default left">{{ 'FORM.edit' | translate}} <i class="fa fa-edit"></i></button>
+					<h4>{{ 'SELLEREDITPROFILE.username' | translate }}: <span>فلان</span></h4>
+					<h4>{{ 'SELLEREDITPROFILE.email' | translate }}: <span>12/3/1935</span></h4>
+					<h4>{{ 'SELLEREDITPROFILE.password' | translate }}: <span>*******</span></h4>
 				</div>
 			</div>
 		</div>
@@ -21,17 +21,17 @@
 	<div class="section1">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>البيانات الشخصية</h3>
+				<h3>{{ 'SELLEREDITPROFILE.personalData' | translate }}</h3>
 			</div>
 		</div>
 		<div class="bg">
 			<div class="row">
 				<div class="col-md-12">
-					<button class="btn btn-default left">تعديل <i class="fa fa-edit"></i></button>
-					<h4>الاسم بالكامل: <span>هبه</span></h4>
-					<h4>تاريخ الميلاد: <span>هبه</span></h4>
-					<h4>النوع: <span>هبه</span></h4>
-					<h4>عنوان التوصيل: <span>هبه</span></h4>
+					<button class="btn btn-default left">{{ 'FORM.edit' | translate}} <i class="fa fa-edit"></i></button>
+					<h4>{{ 'SELLEREDITPROFILE.fullName' | translate }}: <span>فلان</span></h4>
+					<h4>{{ 'SELLEREDITPROFILE.birthday' | translate }}: <span>12/9/2000</span></h4>
+					<h4>{{ 'SELLEREDITPROFILE.type' | translate }}: <span>ذكر</span></h4>
+					<h4>{{ 'SELLEREDITPROFILE.address' | translate }}: <span>منزل رقم 9</span></h4>
 				</div>
 			</div>
 		</div>
@@ -39,31 +39,30 @@
 	<div class="section1">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>معلومات الدفع</h3>
+				<h3>{{ 'SELLEREDITPROFILE.paymentMethod' | translate }}</h3>
 			</div>
 		</div>
 		<div class="bg">
 			<div class="row">
 				<div class="col-md-12">
-					<button class="btn btn-default left">تعديل <i class="fa fa-edit"></i></button>
-					<h4>اسم المستخدم: <span>هبه</span></h4>
-					<h4>البريد الالكتروني: <span>هبه</span></h4>
-					<h4>كلملة المرور: <span>هبه</span></h4>
+					<button class="btn btn-default left">{{ 'FORM.edit' | translate}} <i class="fa fa-edit"></i></button>
+					<h4>{{ 'SELLEREDITPROFILE.nameOnCard' | translate }}: <span>فلان</span></h4>
+					<h4>{{ 'SELLEREDITPROFILE.endDate' | translate }}: <span>12/09/2018</span></h4>
 					<div class="form-group">
-						<label class="control-label">{{ 'CHECKSTEP2.paymentMethod' | translate }}: </label>
+						<label class="control-label">{{ 'SELLEREDITPROFILE.typeOfPayment' | translate }}: </label>
 						<select class="form-control">
-							<option disabled="" selected=""></option>
-				        	<option value="Afghanistan"> Afghanistan </option>
+							<option selected> Master card</option>
+				        	<option value="card"> card </option>
 				    	</select>
 					</div>
 					<div class="form-group">
-						<label for="address">{{ 'CHECKSTEP2.cardNumber' | translate }}: </label>
+						<label for="address">{{ 'SELLEREDITPROFILE.masterCardNumber' | translate }}: </label>
 						<input type="text" id="address" class="form-control">
 					</div>
 				</div>
 				<div class="col-md-6 col-xs-8 col-md-push-3 col-xs-push-2">
-					<h5>&nbsp;&nbsp;or&nbsp;&nbsp;</h5>
-					<button class="btn btn-info btn-block">{{ 'CHECKSTEP2.paypalBTN' | translate }}<i class="fa fa-paypal"></i></button>
+					<h5>&nbsp;&nbsp; {{ 'FORM.or' | translate}} &nbsp;&nbsp;</h5>
+					<button class="btn btn-info btn-block">{{ 'FORM.paypalBTN' | translate }}<i class="fa fa-paypal"></i></button>
 				</div>
 			</div>
 		</div>
@@ -72,19 +71,19 @@
 	<div class="section1">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>اربط حسابك</h3>
+				<h3>{{ 'SELLEREDITPROFILE.linkAccount' | translate }}</h3>
 			</div>
 		</div>
 		<div class="bg">
 			<div class="row">
 				<div class="col-md-12">
-					<button class="btn btn-default left">تعديل <i class="fa fa-edit"></i></button>
+					<button class="btn btn-default left">{{ 'FORM.edit' | translate}} <i class="fa fa-edit"></i></button>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-xs-8 col-md-push-3 col-xs-push-2">
-					<button class="btn btn-primary btn-block">فيسبوك</button>
-					<button class="btn btn-danger btn-block">جوجل</button>
+					<button class="btn btn-primary btn-block">{{ 'FORM.facebookBTN' | translate }}</button>
+					<button class="btn btn-danger btn-block">{{ 'FORM.googleBTN' | translate }}</button>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,62 @@
+.seller-profile{
+	padding: 50px 0;
+}
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+.navbar h4{
+	margin-top: 15px;
+}
+.navbar-right .dropdown-menu{
+	/*left: 60px;*/
+	width: 500px;
+}
+@media (max-width: 767px) {
+	.navbar-right .dropdown-menu{
+		width: 100%;
+	}
+}
+.left_content{
+	width: 49%;
+	text-align: center;
+	position: relative;
+	top: 40px;
+	display: inline-block;
+	float: left;
+}
+.left_content p{
+	vertical-align: middle;
+}
+.right_content{
+	width: 49%;
+	padding: 20px;
+	border-left: 1px solid #aaa;
+	display: inline-block;
+}
+.right_content > p > span{
+	font-size: 24px;
+}
+.right_content > p > span#small{
+	font-size: smaller;
+}
+.vote{
+	padding: 10px 0;
+	height: 15px;
+}
+.vote p{
+	display: inline-block;
+}
+.vote .line{
+	display: inline-block;
+	min-width: 100px;
+	height: 5px;
+	border: 1px solid #aaa;
+	background-color: #fff;
+}
+.vote .line div{
+	width: 80%;
+	height: 3px;
+	background-color: #ee2b47;
+}

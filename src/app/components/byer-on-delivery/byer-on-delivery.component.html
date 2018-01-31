@@ -6,22 +6,25 @@
 			    <div class="hovereffect">
 			        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
 			        <div class="overlay">
-			           <a class="info" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i></a>
-			           <h2>Hover effect 3</h2>
+			            <a class="info" data-toggle="modal" data-target="#detailsModal">
+			           		<i class="fa fa-plus"></i>
+			           	</a>
+			            <h2> {{ 'BYERONDELIVARY.productDetails' | translate }} </h2>
 			        </div>
 			    </div>
 			</div>
 			<div class="col-sm-6">
 				<div class="data">
-					<p>تاريخ شراء المنتج</p>
-					<p><span>التاريخ المتوقع لوصول المنتج</span><span>الوقت المتبقي</span></p>
-					<p>توع التوصيل</p>
-			        <img class="img-responsive" src="http://placehold.it/100x50">
+					<h4>{{ 'BYERONDELIVARY.buyDate' | translate }} : <span>12/07/2018</span></h4>
+					<h4>{{ 'BYERONDELIVARY.expectDate' | translate }}: <span>12/07/2018 </span></h4>
+					<h4>{{ 'BYERONDELIVARY.delivayDate' | translate }}: <span>متبقي 10 ايام تقريبا</span></h4>
+					<h4>{{ 'BYERONDELIVARY.delivayType' | translate }}: <span>شركات اخري</span></h4>
+			        <img class="img-responsive" src="http://placehold.it/120x60">
 
-					<p>شركة التوصيل</p>
-					<p>عنوان التوصيل</p>
-					<p>رقم تلفون التوصيل</p>
-					<p>رقم هاتفك الخاص بالطلب</p>
+					<h4>{{ 'BYERONDELIVARY.company' | translate }}: <span>ارامكس</span></h4>
+					<h4>{{ 'BYERONDELIVARY.address' | translate }}: <span>منزل رقم 10</span></h4>
+					<h4>{{ 'BYERONDELIVARY.phone' | translate }}: <span>0123456789</span></h4>
+					<h4>{{ 'BYERONDELIVARY.orderPhone' | translate }}: <span>0123456789</span></h4>
 				</div>
 			</div>
 		</div>
@@ -32,22 +35,25 @@
 			    <div class="hovereffect">
 			        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
 			        <div class="overlay">
-			           <a class="info" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i></a>
-			           <h2>Hover effect 3</h2>
+			            <a class="info" data-toggle="modal" data-target="#detailsModal">
+			           		<i class="fa fa-plus"></i>
+			           	</a>
+			            <h2> {{ 'BYERONDELIVARY.productDetails' | translate }} </h2>
 			        </div>
 			    </div>
 			</div>
 			<div class="col-sm-6">
 				<div class="data">
-					<p>تاريخ شراء المنتج</p>
-					<p><span>التاريخ المتوقع لوصول المنتج</span><span>الوقت المتبقي</span></p>
-					<p>توع التوصيل</p>
-			        <img class="img-responsive" src="http://placehold.it/100x50">
-					
-					<p>شركة التوصيل</p>
-					<p>عنوان التوصيل</p>
-					<p>رقم تلفون التوصيل</p>
-					<p>رقم هاتفك الخاص بالطلب</p>
+					<h4>{{ 'BYERONDELIVARY.buyDate' | translate }} : <span>12/07/2018</span></h4>
+					<h4>{{ 'BYERONDELIVARY.expectDate' | translate }}: <span>12/07/2018 </span></h4>
+					<h4>{{ 'BYERONDELIVARY.delivayDate' | translate }}: <span>متبقي 10 ايام تقريبا</span></h4>
+					<h4>{{ 'BYERONDELIVARY.delivayType' | translate }}: <span>شركات اخري</span></h4>
+			        <img class="img-responsive" src="http://placehold.it/120x60">
+
+					<h4>{{ 'BYERONDELIVARY.company' | translate }}: <span>ارامكس</span></h4>
+					<h4>{{ 'BYERONDELIVARY.address' | translate }}: <span>منزل رقم 10</span></h4>
+					<h4>{{ 'BYERONDELIVARY.phone' | translate }}: <span>0123456789</span></h4>
+					<h4>{{ 'BYERONDELIVARY.orderPhone' | translate }}: <span>0123456789</span></h4>
 				</div>
 			</div>
 		</div>
@@ -56,7 +62,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	    	<div class="modal-body">
@@ -82,7 +88,7 @@
 										I am a very simple item. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
 									</p>
 									<div class="item-footer">
-										<button class="btn btn-default btn-block">هرض المتج في صفحة منفصله</button>
+										<button class="btn btn-default btn-block">{{ 'BYERONDELIVARY.modal.openPage' | translate }}</button>
 									</div>
 								</div>
 							</div>
@@ -107,7 +113,7 @@
 										I am a very simple item. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
 									</p>
 									<div class="item-footer">
-										<button class="btn btn-default btn-block">هرض المتج في صفحة منفصله</button>
+										<button class="btn btn-default btn-block">{{ 'BYERONDELIVARY.modal.openPage' | translate }}</button>
 									</div>
 								</div>
 							</div>
@@ -132,7 +138,7 @@
 										I am a very simple item. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
 									</p>
 									<div class="item-footer">
-										<button class="btn btn-default btn-block">هرض المتج في صفحة منفصله</button>
+										<button class="btn btn-default btn-block">{{ 'BYERONDELIVARY.modal.openPage' | translate }}</button>
 									</div>
 								</div>
 							</div>
@@ -141,7 +147,7 @@
         		</div>
 	    	</div>
 	    	<div class="modal-footer">
-	        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        	<button type="button" class="btn btn-secondary" data-dismiss="modal">{{ 'BYERONDELIVARY.modal.closeBTN' | translate }}</button>
 	    	</div>
 	    </div>
     </div>

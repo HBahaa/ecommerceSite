@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // import {NativeScriptHttpModule} from "nativescript-angular/http";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -8,7 +9,11 @@ import {TranslateModule, TranslateLoader} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { HttpModule, Http } from "@angular/http";
 
-
+import { MyDatePickerModule } from 'mydatepicker';
+// import { TinymceModule } from 'angular2-tinymce';
+import { QuillEditorModule } from 'ngx-quill-editor';
+import { DropzoneModule } from 'ngx-dropzone-wrapper';
+import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -53,6 +58,14 @@ import { ProductAllSellersComponent } from './components/product-all-sellers/pro
 export function translateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 };
+
+const DROPZONE_CONFIG: DropzoneConfigInterface = {  
+  // Change this to your upload POST address:  
+  url: 'https://httpbin.org/post',  
+  maxFilesize: 50,  
+  acceptedFiles: 'image/*'  
+ }; 
+
 
 @NgModule({
   declarations: [
@@ -100,6 +113,10 @@ export function translateLoaderFactory(http: HttpClient) {
     HttpClientModule,
     HttpModule,
     BrowserModule,
+    FormsModule,
+    MyDatePickerModule,
+    DropzoneModule.forRoot(DROPZONE_CONFIG) ,
+    QuillEditorModule,
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
       {path: 'register', component: RegisterComponent},

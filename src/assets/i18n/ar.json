@@ -8,16 +8,20 @@
     	"confirmPassword": "تأكيد كلمة المرور",
     	"facebookBTN": "تسجيل الدخول بحساب الفيسبوك",
     	"googleBTN": "تسجيل الدخول بحساب جوجل",
+        "paypalBTN": " الدفع عن طريق PayPal",
+        "or": "او",
     	"register": "تسجيل",
-    	"login": "دخول"
+    	"login": "دخول",
+        "edit": "تعديل"
     },
     "LOGIN": {
     	"title": "تسجيل الدخول",
-    	"notHaveAccout": "ليس لديا حساب؟ انشاء حساب جديد الان"
+        
+    	"notHaveAccout": "ليس لديا حساب؟ انشاء حساب جديد الان",
+        "forgetPassword": "نسيت كلمه المرور"
     },
     "REGISTER": {
     	"title": "انشاء حساب جديد",
-    	"or": "او",
     	"haveAccout": "لديك حساب بالفعل؟ تسجيل الدخول"
     },
     "FORGETPASSWORD": {
@@ -48,7 +52,6 @@
     },
     "CHECKSTEP2": {
     	"title": "معلومات الدفع",
-    	"paypalBTN": " الدفع عن طريق PayPal",
     	"paymentMethod": "نوع وسيلة الدفع",
     	"cardNumber": "رقم بطاقة الإتمان",
     	"checkBTN": "حفظ بيانات وسيلة الدفع لتسهيل عمليات الشراء القادمة",
@@ -101,5 +104,129 @@
     		"ar": "عربي",
     		"en": "انجليزي"
     	}
+    },
+    "BYEREDITPROFILE": {
+        "mainData" : "البيانات الاساسية",
+        "personalData": "البيانات الشخصية",
+        "paymentMethod": "معلومات الدفع",
+        "linkAccount": "اربط حسابك",
+        "username": "اسم المستخدم",
+        "email": "الايميل",
+        "password": "كلملة المرور",
+        "type": "النوع",
+        "fullName": "الاسم بالكامل",
+        "address": "عنوان التوصيل",
+        "birthday": "تاريخ الميلاد",
+        "nameOnCard": "الاسم علي الكارت",
+        "endDate": "تاريخ نهاية الكارت",
+        "typeOfPayment": "نوع وسيلة الدفع",
+        "masterCardNumber": "رقم بطاقة الائتمان"
+    },
+    "BYERONDELIVARY":{
+        "productDetails": "اظهر تفاصيل المنتجات",
+        "buyDate": "تاريخ شراء المنتج",
+        "expectDate": "التاريخ المتوقع لوصول المنتج",
+        "delivayDate": "الوقت المتبقي",
+        "delivayType": "نوع التوصيل",
+        "company" : "شركة التوصيل",
+        "phone": "رقم تلفون التوصيل",
+        "address": "عنوان التوصيل",
+        "orderPhone": "رقم هاتفك الخاص بالطلب",
+        "modal": {
+            "openPage": "هرض المتج في صفحة منفصله",
+            "closeBTN": "اغلاق"
+        }
+    },
+    "OWNEDITEM":{
+        "addYourVote": "اضف تقييمك الخاص"
+    },
+    "ITEM":{
+        "add": "اضافة"
+    },
+    "DISCOUNTITEM":{
+        "add": "اضافة",
+        "discount": "خصم"
+    },
+    "CART": {
+        "title": "عربة التسوق الخاصه بك",
+        "discount": "خصم",
+        "deleteProduct": "حذف المنتج",
+        "addFavourite": "اضافة للمفضلة",
+        "totalPrice": "السعر الكلي",
+        "amount": "الكمية",
+        "purchases": "اجمالي المشتريات",
+        "companyDetails": "تفاصيل شركة الشحن",
+        "shippingCost": "تكلفة الشحن للمنزل",
+        "taxes": "ضرائب اضافية علي المنتج",
+        "total": "الاجمالي",
+        "shopping": "اكمال عملية الشراء"
+    },
+    "SELLEREDITPROFILE": {
+        "mainData" : "البيانات الاساسية",
+        "personalData": "البيانات الشخصية",
+        "paymentMethod": "معلومات الدفع",
+        "linkAccount": "اربط حسابك",
+        "username": "اسم المستخدم",
+        "email": "الايميل",
+        "password": "كلملة المرور",
+        "type": "النوع",
+        "fullName": "الاسم بالكامل",
+        "address": "عنوان التوصيل",
+        "birthday": "تاريخ الميلاد",
+        "nameOnCard": "الاسم علي الكارت",
+        "endDate": "تاريخ نهاية الكارت",
+        "typeOfPayment": "نوع وسيلة الدفع",
+        "masterCardNumber": "رقم بطاقة الائتمان"
+    },
+    "SELLERSHOWPRODUCT":{
+        "edit": "تعديل",
+        "discount": "خصم"
+    },
+    "SELLERPUBLICPROFILE":{
+        "productSeller": "اسم بائع المنتج",
+        "ratings": "التقيمات",
+        "stars": "نجوم",
+        "yourVote": "شارك بتقييمك للبائع"
+    },
+    "SELLERADDPRODUCT": {
+        "productDetails": "معلومات المنتج الاساسية",
+        "productPrice": "سعر المتج والخصومات",
+        "productProp": "خصائص المنتج التقنية",
+        "productImage": "الصورة الخاصة بالمنتج",
+        "productDesc": "وصف المنتج",
+        "types": "التصنيفات والرسوم",
+        "pname": "اسم المتج",
+        "mark": "العلامة التجارية",
+        "pStatus": "حالة السلعة",
+        "pPrice": "سعر المنتج",
+        "IsThereDiscout": "هل يوجد خصم؟",
+        "discountEndDate": "تاريخ انتهاء الخصم",
+        "afterDiscount": "السعر بعد الخصم",
+        "address":"عنوان اساسي",
+        "addressDetails": "تفاصيل العنوان",
+        "mainsegment": "القسم الرئيسي",
+        "subsegment": "تصنيف فرعي",
+        "save": "حفظ"
+    },
+    "SELLEREDITPRODUCT": {
+        "productDetails": "معلومات المنتج الاساسية",
+        "productPrice": "سعر المتج والخصومات",
+        "productProp": "خصائص المنتج التقنية",
+        "productImage": "الصورة الخاصة بالمنتج",
+        "productDesc": "وصف المنتج",
+        "types": "التصنيفات والرسوم",
+        "pname": "اسم المتج",
+        "mark": "العلامة التجارية",
+        "pStatus": "حالة السلعة",
+        "pPrice": "سعر المنتج",
+        "IsThereDiscout": "هل يوجد خصم؟",
+        "discountEndDate": "تاريخ انتهاء الخصم",
+        "afterDiscount": "السعر بعد الخصم",
+        "address":"عنوان اساسي",
+        "addressDetails": "تفاصيل العنوان",
+        "mainsegment": "القسم الرئيسي",
+        "subsegment": "تصنيف فرعي",
+        "save": "حفظ",
+        "edit": "تعديل"
     }
 }

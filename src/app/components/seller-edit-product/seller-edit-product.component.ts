@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerEditProductComponent implements OnInit {
 
-  constructor() { }
+	public editor;
+	public editorContent = "";
+	public editorOptions = {
+		placeholder: "insert content..."
+	};
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

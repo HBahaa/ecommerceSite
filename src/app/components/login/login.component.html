@@ -1,29 +1,31 @@
 <div class="container">
-	<div class="row">
+	<div class="row"> 
 		<div class="col-md-6 col-md-push-3 col-xs-8 col-xs-push-2">
 			<div class="content">
 				<div class="login">
-					<h3>تسجيل الدخول</h3>
+					<h3>{{ 'LOGIN.title' | translate }}</h3>
 
-					<a href=""><button class="btn btn-primary btn-block">تسجيل الدخول بحساب الفيسبوك</button></a>
-					<a href=""><button class="btn btn-danger btn-block btn_custom">تسجيل الدخول بحساب جوجل</button></a>
-					<h4>&nbsp;&nbsp;or&nbsp;&nbsp;</h4>
+					<a href=""><button class="btn btn-primary btn-block">{{ 'FORM.facebookBTN' | translate }}</button></a>
+					<a href=""><button class="btn btn-danger btn-block btn_custom">{{ 'FORM.googleBTN' | translate }}</button></a>
+					<h4>&nbsp;&nbsp;  {{ 'FORM.or' | translate}} &nbsp;&nbsp;</h4>
 					<form>
 						<div class="form-group">
-							<label for="username">Username</label>
+							<label for="username">{{ 'FORM.username' | translate }}</label>
 							<input type="text" id="username" class="form-control" >
 						</div>
 
 						<div class="form-group">
-							<label for="password">Password</label>
-							<a class="left" routerLink="/confirmEmail">نسيت كلمه المرور</a>
+							<label for="password">{{ 'FORM.password' | translate }}</label>
+							<a class="left" routerLink="/confirmEmail">{{ 'LOGIN.forgetPassword' | translate }}</a>
 							<input type="text" id="password" class="form-control">
 						</div>
 
-						<a routerLink="/"><button class="btn btn-success btn-block">Submit</button></a>
+						<a routerLink="/"><button class="btn btn-success btn-block">{{ 'FORM.login' | translate }}</button></a>
 					</form>
 				</div>
-				<a routerLink="/register"><button class="btn btn-default btn-block">ليس لديا حساب</button></a>
+				<a routerLink="/register">
+					<button class="btn btn-default btn-block">{{ 'LOGIN.notHaveAccout' | translate }}</button>
+				</a>
 				
 			</div>
 		</div>

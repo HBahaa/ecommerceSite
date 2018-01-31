@@ -1,3 +1,117 @@
-<p>
-  seller-public-profile works!
-</p>
+<nav class="navbar navbar-default custom-nav">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar4">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar4">
+			<ul class="nav navbar-nav">
+				<li class="txt"><h4>{{ 'SELLERPUBLICPROFILE.productSeller' | translate }}</h4></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right flip">
+	        	<li class="dropdown" routerLinkActive="active">
+					<a class="dropdown-toggle" data-toggle="dropdown" routerLink="page1">
+						{{ 'SELLERPUBLICPROFILE.ratings' | translate }} (123)<span class="caret"></span>
+						
+					</a>
+					<ul class="dropdown-menu">
+						<li><!-- 
+							<div class="row">
+								<div class="col-md-6"> -->
+									<div class="right_content">
+										<p><span>3.75</span><span id="small"> من 5 </span> (145) تصويت</p>
+										<div class="stars">
+											<i class="fa fa-star-o fa-2x"></i>
+											<i class="fa fa-star-half-o fa-2x"></i>
+										    <i class="fa fa-star fa-2x"></i>
+										    <i class="fa fa-star fa-2x"></i>
+										    <i class="fa fa-star fa-2x"></i>
+										</div>
+										<div class="vote">
+											<p>{{ 'SELLERPUBLICPROFILE.stars' | translate }} 5</p>
+											<div class="line"><div></div></div>
+											<p>(145)</p>
+										</div>
+										<div class="vote">
+											<p>{{ 'SELLERPUBLICPROFILE.stars' | translate }} 4</p>
+											<div class="line"><div></div></div>
+											<p>(145)</p>
+										</div>
+										<div class="vote">
+											<p>{{ 'SELLERPUBLICPROFILE.stars' | translate }} 3</p>
+											<div class="line"><div></div></div>
+											<p>(145)</p>
+										</div>
+										<div class="vote">
+											<p>{{ 'SELLERPUBLICPROFILE.stars' | translate }} 2</p>
+											<div class="line"><div></div></div>
+											<p>(145)</p>
+										</div>
+										<div class="vote">
+											<p>{{ 'SELLERPUBLICPROFILE.stars' | translate }} 1</p>
+											<div class="line"><div></div></div>
+											<p>(145)</p>
+										</div>
+									</div><!-- 
+								</div>
+								<div class="col-md-6"> -->
+									<div class="left_content">
+										<div class="stars">
+										    <i class="fa fa-star-o fa-2x"></i>
+										    <i class="fa fa-star-o fa-2x"></i>
+										    <i class="fa fa-star-o fa-2x"></i>
+										    <i class="fa fa-star-o fa-2x"></i>
+										    <i class="fa fa-star-o fa-2x"></i>
+										</div>
+										<p>{{ 'SELLERPUBLICPROFILE.yourVote' | translate }}</p>
+									</div>
+								<!-- </div>
+							</div> -->
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a>
+						<div class="stars">
+						    <i class="fa fa-star-half-o"></i>
+						    <i class="fa fa-star"></i>
+						    <i class="fa fa-star"></i>
+						    <i class="fa fa-star"></i>
+						    <i class="fa fa-star"></i>
+						</div>
+					</a>
+				</li>
+	        </ul>
+		</div>
+	</div>
+</nav>
+
+
+
+<app-search></app-search>
+<div class="container">
+	<div class="seller-profile">
+		<div class="row">
+			<div class="col-md-3 col-sm-4 hidden-xs">
+				<app-filter></app-filter>
+			</div>
+			<div class="col-md-9 col-sm-8 col-xs-12">
+				<div class="col-md-4 col-xs-6">
+					<app-item></app-item>
+				</div>
+				<div class="col-md-4 col-xs-6">
+					<app-discount-item></app-discount-item>
+				</div>
+				<div class="col-md-4 col-xs-6">
+					<app-item></app-item>
+				</div>
+				<div class="col-md-4 col-xs-6">
+					<app-item></app-item>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
