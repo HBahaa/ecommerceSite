@@ -17,3 +17,19 @@
 .search nav .pagination{
 	margin: 9px 0;
 }
+.pagination > li > a,
+.pagination > li > a,
+.pagination > li > i,
+.pagination > li > i{
+	color: #555;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover{
+	background-color: #ee2b47;
+	border-color: #ee2b47;
+	color: #fff;
+}

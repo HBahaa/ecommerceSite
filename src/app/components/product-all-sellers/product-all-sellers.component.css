@@ -44,6 +44,9 @@
 	margin-left: 20px;
 	color: #222;
 }
+a:not(.btn-discount){
+	font-size: 18px;
+}
 .price{
 	display: inline-block;
 	float: left;
@@ -54,10 +57,13 @@
 	text-align: center;
 }
 .title .form-control{
-	width: auto;
+	width: 80px;
 	display: inline-block;
 }
 
 .title{
 	height: 70px;
+}
+.filter_border{
+	margin-top: -12px ;border-right: 1px solid #888
 }

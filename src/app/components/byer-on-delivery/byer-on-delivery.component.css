@@ -54,18 +54,19 @@ padding:10px;
 }
 
 .hovereffect a.info {
-text-decoration:none;
-display:inline-block;
-text-transform:uppercase;
-color:#fff;
-border:1px solid #fff;
-background-color:transparent;
-opacity:0;
-filter:alpha(opacity=0);
--webkit-transition:all .2s ease-in-out;
-transition:all .2s ease-in-out;
-margin:50px 0 0;
-padding:7px 14px;
+    text-decoration:none;
+    display:inline-block;
+    text-transform:uppercase;
+    color:#fff;
+    border:1px solid #fff;
+    background-color:transparent;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    margin:50px 0 0;
+    padding:7px 14px;
+    cursor: pointer;
 }
 
 .hovereffect a.info:hover {
@@ -135,4 +136,11 @@ transition-delay:.2s;
     margin-right: 20px;
     font-weight: 400;
     color: #555;
+}
+.item-footer .btn-default{
+    background-color: #eee
+}
+.modal-footer .btn{
+    background-color: #34374c;
+    color: #fff;
 }

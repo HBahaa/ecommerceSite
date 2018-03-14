@@ -43,10 +43,12 @@
       			<li routerLinkActive="active">
 	        		<a class="navbar-brand" href="/">LOGO</a>
       			</li>
+      		</ul>
+      		<ul class="nav navbar-nav nav-search">
 				<li>
 					<a class="categoty" routerLink="login">{{ 'NAVBAR.category' | translate }} <span class="caret"></span></a>
 				</li>
-				<li>
+				<li id="search">
 	        		<form class="navbar-form">
 				      	<div class="input-group">
 					        <input type="text" class="form-control" placeholder="{{ 'NAVBAR.search' | translate }}" name="search">
@@ -63,62 +65,10 @@
 	        	<li routerLinkActive="active">
 		            <a class="cart" routerLink="cart">
 		            	<span class="badge badge-light">4</span><span class="fa fa-shopping-cart"></span> 
-		        		{{ 'NAVBAR.cart' | translate }}
+		        		<span class="cart_text">{{ 'NAVBAR.cart' | translate }}</span>
 		            </a>
 		        </li>
 	        </ul>
         </div>
     </div>
-</nav>
-<nav class="navbar navbar-default custom-nav">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar3">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		    </button>
-		</div>
-		<div class="collapse navbar-collapse" id="navbar3">
-			<ul class="nav navbar-nav">
-				<li class="txt"><p>جميع التصنيفات</p></li>
-				
-				<li class="dropdown" routerLinkActive="active">
-					<a class="dropdown-toggle" data-toggle="dropdown" routerLink="page1">تصنيف رقم ا
-					<!-- <span class="caret"></span> --></a>
-					<div class="dropdown-menu">
-						<div class="row">
-							<div class="col-sm-4 col-md-2">
-								<h5>الاكثرمبيعا</h5>
-								<ul>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-								</ul>
-							</div>
-							<div class="col-sm-4 col-md-2">
-								<h5>تصنيف فرعي</h5>
-								<ul>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-								</ul>
-							</div>
-							<div class="col-sm-4 col-md-2">
-								<h5>تصنيف فرعي</h5>
-								<ul>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-									<li><a routerLink="#">لينك لمنتج ما</a></li>
-								</ul>
-							</div>
-							<div class="hidden-sm col-md-6">
-								<img class="img-responsive" src="http://via.placeholder.com/250x150">
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
 </nav>

@@ -3,6 +3,8 @@
 @import '~bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
 @import '~font-awesome/css/font-awesome.min.css';
 @import '~dropzone/dist/min/dropzone.min.css';
+@import "~nouislider/distribute/nouislider.min.css";
+
 body{
 	background-color: #eee;
 }
@@ -14,4 +16,30 @@ body{
 	-moz-appearance: none;
 	appearance: none;
 	background: transparent url("./assets/images/down.png") no-repeat 10px center;
+}
+.noUi-horizontal{
+  height: 8px !important;
+}
+.noUi-target{
+	background: #aaa;
+	border-width: 0px;
+}
+.noUi-connect{
+  background: #aaa;
+  box-shadow: none;
+}
+.noUi-horizontal .noUi-handle{
+  width: 20px;
+  height: 20px;
+  top: -6px;
+}
+.noUi-handle{
+	box-shadow: none;
+	border-radius: 50%;
+	background-color: #ee2b47;
+	border-color: #ee2b47;
+}
+.noUi-handle::after, .noUi-handle::before{
+  height: 0;
+  width: 0;
 }

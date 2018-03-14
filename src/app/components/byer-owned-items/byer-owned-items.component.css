@@ -1,3 +1,7 @@
 .content {
-	padding: 50px 0;
+	margin: 50px 0;
+}
+.filter_border{
+    margin-top: -12px ;
+    border-right: 1px solid #888
 }

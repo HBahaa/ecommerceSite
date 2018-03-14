@@ -1,3 +1,4 @@
+<app-category-navbar></app-category-navbar>
 <app-seller-navbar></app-seller-navbar>
 
 <div class="container">
@@ -21,8 +22,8 @@
 						<div class="form-group">
 							<label class="control-label">{{ 'SELLERADDPRODUCT.pStatus' | translate }}: </label>
 							<select class="form-control">
-								<option value="masterCard" selected>ماستر كارت</option>
-					        	<option value="card"> كارت </option>
+								<option value="" selected>جديدة</option>
+					        	<option value=""> جديدة</option>
 					    	</select>
 						</div>
 					</div>
@@ -39,10 +40,10 @@
 						<div class="form-group">
 							<label class="control-label">{{ 'SELLERADDPRODUCT.IsThereDiscout' | translate }}: </label>
 							<div>
-								<label class="radio-btn">One<input type="radio" checked="checked" name="radio">
+								<label class="radio-btn">نعم<input type="radio" checked="checked" name="radio">
 									<span class="checkmark"></span>
 								</label>
-								<label class="radio-btn">Two<input type="radio" name="radio">
+								<label class="radio-btn">لا<input type="radio" name="radio">
 									<span class="checkmark"></span>
 								</label>
 								

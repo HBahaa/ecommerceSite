@@ -13,6 +13,7 @@ import { MyDatePickerModule } from 'mydatepicker';
 import { QuillEditorModule } from 'ngx-quill-editor';
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
+import { NouisliderModule } from 'ng2-nouislider';
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -53,6 +54,7 @@ import { SellerEditProductComponent } from './components/seller-edit-product/sel
 import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductAllSellersComponent } from './components/product-all-sellers/product-all-sellers.component';
+import { CategoryNavbarComponent } from './components/category-navbar/category-navbar.component';
 
 export function translateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -106,9 +108,11 @@ const DROPZONE_CONFIG: DropzoneConfigInterface = {
     SellerEditProductComponent,
     SellerAddProductComponent,
     CartComponent,
-    ProductAllSellersComponent
+    ProductAllSellersComponent,
+    CategoryNavbarComponent
   ],
   imports: [
+    NouisliderModule,
     HttpClientModule,
     HttpModule,
     BrowserModule,

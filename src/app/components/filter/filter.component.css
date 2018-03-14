@@ -1,3 +1,14 @@
+.panel{
+  background-color: transparent;
+  box-shadow: none;
+  border-color: transparent;
+}
+.panel-body{
+  margin: 35px 0;
+}
+hr{
+  border-color: #888;
+}
 .collapsed-icon-toggle.collapsed .on-closed {
   display: initial;
 }
@@ -26,4 +37,7 @@
 }
 .collapse input{
   width: 100px;
+}
+#coll-0 input{
+  margin-bottom: 20px;
 }
